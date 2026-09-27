@@ -1,0 +1,20 @@
+Package: plota
+Type: Shiny
+Title: Plota - Graficos Elegantes para a Pesquisa Agronomica
+Version: 1.0.0
+Authors@R: person("Marlenildo", role = c("aut", "cre", "cph"))
+Description: Aplicativo Shiny para criar graficos cientificos elegantes a partir
+    de dados digitados, colados do Excel ou importados (xlsx, xls, csv): barras,
+    barras horizontais e empilhadas, linhas e interacao, medias com erro,
+    dispersao com regressao (linear, quadratica, cubica, logaritmica), boxplot,
+    violino, histograma e densidade. Permite escolher fonte, tamanho, cores,
+    contornos, temas e legendas, agrupar graficos em paineis (A, B, C...) e
+    exportar em PNG, TIFF, JPEG, PDF, SVG ou EPS no tamanho e resolucao desejados.
+License: MIT + file LICENSE
+URL: https://github.com/Marlenildo/plota
+BugReports: https://github.com/Marlenildo/plota/issues
+Encoding: UTF-8
+Language: pt-BR
+Depends: R (>= 4.1.0)
+Imports: shiny (>= 1.7.0), ggplot2 (>= 3.4.0), patchwork, showtext, sysfonts,
+    rhandsontable, readxl, colourpicker, scales, jsonlite

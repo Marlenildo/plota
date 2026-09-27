@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Se você usar o Plota em trabalhos acadêmicos, cite-o como abaixo."
+title: "Plota: Gráficos elegantes para a pesquisa agronômica"
+abstract: "Aplicativo Shiny para criar gráficos científicos elegantes (barras, linhas, interação, regressão, boxplot e outros), agrupá-los em painéis e exportá-los em alta resolução."
+type: software
+authors:
+  - name: "Marlenildo"
+version: 1.0.0
+date-released: 2026-09-27
+license: MIT
+repository-code: "https://github.com/Marlenildo/plota"
+keywords:
+  - gráficos científicos
+  - visualização de dados
+  - experimentação agrícola
+  - regressão
+  - ggplot2
+  - Shiny
+  - R
