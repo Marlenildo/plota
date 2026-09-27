@@ -29,7 +29,7 @@ Aplicativo [Shiny](https://shiny.posit.co/) da mesma família do Ranova, do Crom
 - **Expoentes e índices**: escreva `kg ha^-1` ou `CO_2` e o gráfico mostra kg ha<sup>−1</sup> e CO<sub>2</sub>.
 - **Vários gráficos**: crie, duplique, exclua e aplique o estilo de um gráfico a todos com um clique.
 - **Painel**: junte gráficos em uma figura com letras (A, B, C / (a), (b)...) e legenda comum.
-- **Exportação**: PNG, TIFF (LZW), JPEG, PDF, SVG e EPS; qualquer resolução (72 a 2400 dpi) e tamanho em
+- **Exportação**: TIFF (LZW, formato padrão, o mais pedido pelas revistas), PNG, JPEG, PDF, SVG e EPS; qualquer resolução (72 a 2400 dpi) e tamanho em
   cm, mm, polegadas ou pixels, com tamanhos prontos para artigo e slide. A prévia é desenhada no mesmo
   tamanho da exportação: o que se vê é o que se baixa.
 - **Projeto**: salve dados e gráficos em um arquivo `.plota` no seu computador e abra depois.

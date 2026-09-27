@@ -27,7 +27,7 @@ Primeira versão.
 - Expoentes e índices digitados como `^-1` e `_2`.
 - Vários gráficos por sessão, duplicação e estilo aplicado a todos.
 - Painel com letras (A, B, C...) e legenda comum.
-- Exportação em PNG, TIFF, JPEG, PDF, SVG e EPS em qualquer tamanho e
+- Exportação em TIFF (padrão), PNG, JPEG, PDF, SVG e EPS em qualquer tamanho e
   resolução, com prévia no tamanho real.
 - Projeto salvo e aberto em arquivo `.plota`.
 - `manifest.json` para publicar no Posit Connect Cloud.

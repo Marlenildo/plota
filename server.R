@@ -489,7 +489,7 @@ server <- function(input, output, session) {
     list(
       largura = em_polegadas(input[[paste0(prefixo_saida, "_largura")]], unidade, dpi),
       altura = em_polegadas(input[[paste0(prefixo_saida, "_altura")]], unidade, dpi),
-      dpi = dpi, formato = input[[paste0(prefixo_saida, "_formato")]] %||% "png",
+      dpi = dpi, formato = input[[paste0(prefixo_saida, "_formato")]] %||% "tiff",
       transparente = isTRUE(input[[paste0(prefixo_saida, "_transparente")]])
     )
   }
@@ -576,7 +576,7 @@ server <- function(input, output, session) {
   }, deleteFile = TRUE)
 
   output$baixar_g <- downloadHandler(
-    filename = function() nome_arquivo(estado$graficos[[estado$atual]]$nome, input$g_formato %||% "png"),
+    filename = function() nome_arquivo(estado$graficos[[estado$atual]]$nome, input$g_formato %||% "tiff"),
     content = function(arquivo) {
       t <- tamanho_saida("g")
       spec <- estado$graficos[[estado$atual]]
@@ -617,7 +617,7 @@ server <- function(input, output, session) {
   }, deleteFile = TRUE)
 
   output$baixar_p <- downloadHandler(
-    filename = function() nome_arquivo("painel", input$p_formato %||% "png"),
+    filename = function() nome_arquivo("painel", input$p_formato %||% "tiff"),
     content = function(arquivo) {
       t <- tamanho_saida("p")
       salvar_grafico(arquivo, painel_atual(), t$formato, t$dpi, t$largura, t$altura, t$transparente)

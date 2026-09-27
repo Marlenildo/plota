@@ -11,7 +11,7 @@ controles_exportacao <- function(prefixo, largura = 17.5, altura = 11, rotulo = 
         selectInput(paste0(prefixo, "_unidade"), "Unidade", choices = UNIDADES, selected = "cm")
       ),
       div(class = "grade-medidas",
-        selectInput(paste0(prefixo, "_formato"), "Formato", choices = FORMATOS, selected = "png"),
+        selectInput(paste0(prefixo, "_formato"), "Formato", choices = FORMATOS, selected = "tiff"),
         selectizeInput(paste0(prefixo, "_dpi"), "Resolução (dpi)", choices = c(72, 150, 300, 600, 1200), selected = 300,
                        options = list(create = TRUE, createFilter = "^[0-9]+$")),
         div(class = "caixa-transparente", checkboxInput(paste0(prefixo, "_transparente"), "Fundo transparente", FALSE))
