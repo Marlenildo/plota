@@ -9,18 +9,16 @@ library(colorspace)
 
 cor_lch <- function(h) hex(polarLAB(L = if (h > 200) 54 else 64, C = if (h > 200) 34 else 44, H = h), fixup = TRUE)
 
-# Engrenagem: anel com dentes radiais e miolo vazado, no mesmo traço do resto do icone
-engrenagem <- function(cx, cy, raio, n_dentes, comp_dente, cor, espessura) {
+# Engrenagem simples: um anel (um so furo no meio) com dentes largos
+engrenagem <- function(cx, cy, raio, n_dentes, comp_dente, cor, espessura_anel, espessura_dente) {
   ang <- seq(0, 2 * pi, length.out = 160)
-  lines(cx + raio * cos(ang), cy + raio * sin(ang), col = cor, lwd = espessura, lend = "round")
+  lines(cx + raio * cos(ang), cy + raio * sin(ang), col = cor, lwd = espessura_anel, lend = "round")
   dentes <- seq(0, 2 * pi, length.out = n_dentes + 1)[-(n_dentes + 1)]
   for (a in dentes) {
     segments(cx + raio * cos(a), cy + raio * sin(a),
              cx + (raio + comp_dente) * cos(a), cy + (raio + comp_dente) * sin(a),
-             col = cor, lwd = espessura, lend = "round")
+             col = cor, lwd = espessura_dente, lend = "butt")
   }
-  ang2 <- seq(0, 2 * pi, length.out = 60)
-  lines(cx + raio * .42 * cos(ang2), cy + raio * .42 * sin(ang2), col = cor, lwd = espessura * .8, lend = "round")
 }
 
 desenhar_logo <- function(escala = 1) {
@@ -43,7 +41,7 @@ desenhar_logo <- function(escala = 1) {
   lines(c(-.86, -.86, .86), c(.86, -.86, -.86), col = "#173B5B", lwd = traco, lend = "round", ljoin = "round")
 
   # Engrenagem sobre o gráfico de barras
-  engrenagem(.16, .2, .34, 8, .14, "#173B5B", traco * .62)
+  engrenagem(.16, .2, .32, 6, .16, "#173B5B", traco * .62, traco * .95)
 }
 
 tipo <- if (capabilities("aqua")) "quartz" else "cairo"
