@@ -26,6 +26,7 @@ controles_exportacao <- function(prefixo, largura = 17.5, altura = 11, rotulo = 
 
 ui <- fluidPage(
   tags$head(
+    tags$script(async = NA, src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3130340973057636", crossorigin = "anonymous"),
     tags$link(rel = "stylesheet", type = "text/css", href = "css/app.css"),
     tags$meta(name = "author", content = "Marlenildo"),
     tags$meta(name = "description", content = "Plota: gráficos elegantes para a pesquisa agronômica, prontos para artigos, teses e apresentações."),

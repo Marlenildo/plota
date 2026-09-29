@@ -2226,6 +2226,9 @@
     "ui.R": {
       "checksum": "43fb5e8453eb69942f29770930381835"
     },
+    "www/ads.txt": {
+      "checksum": "8c1ec6b15a2f0581c05590efa611d39f"
+    },
     "www/css/app.css": {
       "checksum": "9e02e9fbeb1910a1cf48586c51606b5a"
     },
