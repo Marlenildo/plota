@@ -17,7 +17,7 @@ engrenagem <- function(cx, cy, raio, n_dentes, comp_dente, cor, espessura_anel, 
   for (a in dentes) {
     segments(cx + raio * cos(a), cy + raio * sin(a),
              cx + (raio + comp_dente) * cos(a), cy + (raio + comp_dente) * sin(a),
-             col = cor, lwd = espessura_dente, lend = "butt")
+             col = cor, lwd = espessura_dente, lend = "round")
   }
 }
 
@@ -41,7 +41,7 @@ desenhar_logo <- function(escala = 1) {
   lines(c(-.86, -.86, .86), c(.86, -.86, -.86), col = "#173B5B", lwd = traco, lend = "round", ljoin = "round")
 
   # Engrenagem sobre o gráfico de barras
-  engrenagem(.16, .2, .32, 6, .16, "#173B5B", traco * .62, traco * .95)
+  engrenagem(.16, .2, .32, 6, .16, "#173B5B", traco * .92, traco * .95)
 }
 
 tipo <- if (capabilities("aqua")) "quartz" else "cairo"

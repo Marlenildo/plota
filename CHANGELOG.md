@@ -15,7 +15,8 @@ e o projeto usa [Versionamento Semântico](https://semver.org/lang/pt-BR/):
 ### Alterado
 
 - Logo: contorno na mesma espessura do Ranova e do Minhas Entregas; a curva de
-  tendência com ponto deu lugar a uma engrenagem sobre o gráfico de barras.
+  tendência com ponto deu lugar a uma engrenagem simples (furo pequeno, dentes
+  arredondados) sobre o gráfico de barras.
 
 ## [1.0.0] - 2026-09-27
 
