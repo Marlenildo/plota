@@ -165,7 +165,7 @@ details.recolhivel[open] .recolhivel-seta { transform:rotate(-135deg); margin-to
 /* Rodapé */
 .nota-privacidade { display:flex; justify-content:center; align-items:center; gap:8px; color:var(--muted); font-size:12px; text-align:center; margin:4px auto 8px; max-width:760px; }
 .rodape-app { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:10px; color:#718498; font-size:12px; padding:14px 0 4px; }
-.logo-rodape { height:42px; width:auto; }
+.logo-rodape { height:26px; width:auto; }
 .versao-app { border-left:1px solid var(--line); padding-left:10px; }.versao-app a { color:#718498; font-weight:700; }.versao-app a:hover { color:var(--blue); }
 
 @media(max-width:1199px) { .grade-exportacao { grid-template-columns:1fr 1fr; }.grade-exportacao > :first-child { grid-column:1 / -1; } }

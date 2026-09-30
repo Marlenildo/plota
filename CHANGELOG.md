@@ -14,6 +14,8 @@ e o projeto usa [Versionamento Semântico](https://semver.org/lang/pt-BR/):
 
 ### Alterado
 
+- Assinatura do autor no rodapé (e nos relatórios) passa a usar a nova logo
+  Marlenildo.online, a mesma do site, sem o slogan "Soluções em Curso".
 - Logo: contorno na mesma espessura do Ranova e do Minhas Entregas; a curva de
   tendência com ponto deu lugar a uma engrenagem simples (furo pequeno, dentes
   arredondados) sobre o gráfico de barras.

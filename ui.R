@@ -181,7 +181,7 @@ ui <- fluidPage(
 
   div(class = "rodape-app",
     span("Desenvolvido por"),
-    tags$img(src = "img/logo_marlenildo.png", class = "logo-rodape", alt = "Marlenildo Soluções em Curso"),
+    tags$img(src = "img/logo_marlenildo.png", class = "logo-rodape", alt = "Marlenildo.online"),
     span(class = "versao-app",
       tags$a(href = "https://github.com/Marlenildo/plota/blob/main/CHANGELOG.md", target = "_blank", rel = "noopener",
              title = "Ver novidades desta versão", paste0("Plota v", VERSAO_APP)))
